@@ -1,0 +1,163 @@
+# i = 3
+# type(i)
+
+# j = 5
+# while(j<=10):
+#   print(j)
+#   j = j + 1
+
+
+# 2==3
+# 3 == 3
+
+# 4 > 6
+# 6>4
+
+# num = 25
+# if num % 2 == 0:
+#   print("{} is even".format(num))
+# else:
+#   print("{} is odd".format(num))
+
+
+# #Typecasting
+# z= 3.8
+# int(z)
+
+# y = "12345"
+# int(y)
+
+# x = float(1) 
+
+# type("Suleman")
+
+# # For loop
+# for i in "Hello":
+#   # print(i)
+#   print(i, end="")
+# print()
+
+
+# (2 > 3) or (5 > 1)
+# (2 > 3) and (5 > 1)
+# not((2 > 3) or (5 > 1))
+
+# import random
+# print(random.randrange(1, 100))
+
+# b = "AI is"
+# c = "Hello, World"
+# print(b +" " + c[:4]) 
+
+# # Duplication is allowed in List
+# List = [1,2,3,4,5,1]
+# print(List)
+# type(List)
+
+# # Duplication is not allowed in set
+# List1 = {1,2,3,4,5,1}
+# print(List1)
+# type(List1)
+
+# List2 = [3,4,5]
+# i=0
+
+# while i < len(List2):
+#   print(List[i])
+#   i = i + 1
+
+# Tuple
+t = (3,6)
+print(type(t))
+
+t1 = list(t)
+print(type(t1))
+# Swapping is not allowed in tuple so first of all we have to typecast tuple into list and then perform the swapping
+t1[0], t1[1] = t1[1], t1[0]
+print(t1)
+
+# Negative Indexing
+thislist = ["apple", "banana", "cherry"]
+print(thislist[-1])
+# Range of Indexes
+thislist = ["apple", "banana", "cherry", "orange"]
+print(thislist[2:4])
+# Change Item Value
+thislist = ["apple", "banana", "cherry"]
+thislist[1] = "orange"
+print(thislist)
+# Adding an item into the list
+thislist = ["apple", "banana", "cherry"]
+thislist.append("orange")
+print(thislist)
+# Adding an item at he specific place
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(2, "orange")
+print(thislist)
+# List sorting
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)
+
+
+# Tupples
+
+# Join Two Tuples
+tuple1 = ("a", "b" , "c")
+tuple2 = (1, 2, 3)
+
+tuple3 = tuple1 + tuple2
+print(tuple3)
+
+
+# Dictionaries
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict['brand'])
+x = thisdict.get("model")
+print(x)
+
+
+class Stack:
+    def __init__(self):
+        self.items = []
+
+    def is_empty(self):
+        return len(self.items) == 0
+
+    def push(self, item):
+        self.items.append(item)
+
+    def pop(self):
+        if not self.is_empty():
+            return self.items.pop()
+        else:
+            return "Stack is empty"
+
+    def peek(self):
+        if not self.is_empty():
+            return self.items[-1]
+        else:
+            return "Stack is empty"
+
+    def size(self):
+        return len(self.items)
+
+# Example usage:
+stack = Stack()
+stack.push(10)
+stack.push(20)
+stack.push(30)
+
+print(stack.pop())  # Output: 30
+print(stack.peek())  # Output: 20
+print(stack.size())  # Output: 2
+print(stack.is_empty())  # Output: False
+
+
+
+
+
